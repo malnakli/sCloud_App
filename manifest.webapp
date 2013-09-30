@@ -1,0 +1,27 @@
+{
+    "version": "1",
+    "name": "sCloud_App",
+    "launch_path": "/index.html",
+    "description": "sCloud allow you to create and open file from Google Drive",
+    "type": "privileged",
+    "icons": {
+        "16": "/images/logo16.png",
+        "32": "/images/logo32.png",
+        "48": "/images/logo48.png",
+        "60": "/images/logo60.png",
+        "64": "/images/logo64.png",
+        "128": "/images/logo128.png"
+    },
+    "developer": {
+        "name": "Mohammed Alnakli"
+    },
+    "installs_allowed_from": ["*"],
+    "default_locale": "en",
+   "permissions": {
+   		"device-storage:sdcard":{ 	"access": "readwrite",
+   									"description": "Required to access sdCard" },
+   		"device-storage:pictures":{ "access": "readwrite", 
+   									"description": "Required to access Pictures" }
+   }
+   
+}

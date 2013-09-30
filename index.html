@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<!--
+    Exchange the line above for this to enable offline support
+    <html manifest="manifest.appcache">
+
+    Please make your homework before doing this:
+        http://www.alistapart.com/articles/application-cache-is-a-douchebag/
+        http://appcachefacts.info
+
+    This might be necessary to set up on your server, to make sure
+    files are updated when the appcache file itself is:
+        https://github.com/robnyman/Firefox-OS-Boilerplate-App/blob/gh-pages/.htaccess
+ -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+   
+    <title>sCloud App</title>
+</head>
+
+<body>
+
+    <section role="region">
+        <header>
+            <!-- Icon that will indicate whether you are online or offline - enabled if you are using offline/appcache (see above) -->
+            <div id="online-status" title="Online"></div>
+           
+           
+        </header>
+    </section>
+
+
+    <div id="main">
+		
+		file name: <input type="text" name="fileName"><br>
+       <button id="device-storage">Create a text file</button>
+        <div id="device-storage-display"></div>
+
+       
+
+
+        <a href="htmlPages/displayFile.html"><button id="list-files">List-LocalApp-Files</button>
+     </a>
+        
+        <a href="htmlPages/googleDrive.html"><button id="google-storage">Google Drive</button></a>
+        <div id="device-storage-display"></div>
+       
+        
+    </div>
+
+    <footer>
+        <div role="toolbar">
+            
+        </div>
+    </footer>
+	  <!--____________________StartOfscriptS____________________-->
+   	<script type="text/javascript" src="js/addFile.js" charset="UTF-8"></script>
+   
+   	     <!--__________________EndOfScriptS__________________-->
+   
+
+    
+
+</body>
+</html>
